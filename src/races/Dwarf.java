@@ -1,5 +1,6 @@
 package races;
 
+import enums.AbilityScoreType;
 import enums.Language;
 import enums.Size;
 
@@ -14,6 +15,7 @@ public class Dwarf extends Race {
     public Dwarf() {
         super(Size.MEDIUM, 25, true, Arrays.asList(Language.COMMON, Language.DWARVISH));
         this.additionalTraits = this.setAdditionalTraits();
+        this.increaseAbilityScore(AbilityScoreType.CONSTITUTION, 2);
     }
 
     private Map<String, String> setAdditionalTraits() {
