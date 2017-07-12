@@ -1,0 +1,9 @@
+package enums;
+
+/**
+ * Created by Jonathan on 7/12/17.
+ */
+public enum Language {
+    COMMON, DWARVISH, ELVISH, GIANT, GNOMISH, GOBLIN, HALFLING, ORC,
+    ABYSSAL, CELESTIAL, DRACONIC, DEEP_SPEECH, INFERNAL, PRIMORIDAL, SYLVAN, UNDERCOMMON
+}
