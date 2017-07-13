@@ -16,6 +16,8 @@ public class Race {
     private boolean hasDarkvision;
     private List<Language> languages;
 
+    protected Map<String, String> additionalTraits;
+
     private List<Skill> skillProficiencies;
     private List<Weapon> weaponProficiencies;
     private List<ArmorType> armorProficiencies;
@@ -85,5 +87,9 @@ public class Race {
 
     public List<ArmorType> getArmorProficiencies() {
         return armorProficiencies;
+    }
+
+    public Map<String, String> getAdditionalTraits() {
+        return additionalTraits;
     }
 }

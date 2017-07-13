@@ -15,5 +15,10 @@ public class Elf_Dark extends Elf {
         super();
         this.increaseAbilityScore(AbilityScoreType.CHARISMA, 1);
         this.setWeaponProficiencies(Arrays.asList(Weapon.RAPIER, Weapon.SHORTSWORD, Weapon.CROSSBOW_HAND));
+
+        this.additionalTraits.put("Superior Darkvision.", "Your darkvision has a radius of 120 feet.");
+        this.additionalTraits.put("Sunlight Sensitivity.", "You have disadvantage on attack rolls and on Wisdom " +
+                "(Perception) chekcs that rely on sight when you, the target of your attack, or whatever you are " +
+                "trying to perceive is in direct sunlight.");
     }
 }

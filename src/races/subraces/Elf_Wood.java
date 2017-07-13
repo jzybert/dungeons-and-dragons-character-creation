@@ -16,5 +16,8 @@ public class Elf_Wood extends Elf {
         this.increaseAbilityScore(AbilityScoreType.WISDOM, 1);
         this.setWeaponProficiencies(Arrays.asList(Weapon.LONGSWORD, Weapon.SHORTSWORD, Weapon.SHORTBOW, Weapon.LONGBOW));
         this.setSpeed(35);
+
+        this.additionalTraits.put("Mask of the Wild.", "You can attempt to hide even when you are only lightly obscured " +
+                "by foliage, heavy rain, falling snow, mist, and other natural phenomena.");
     }
 }
