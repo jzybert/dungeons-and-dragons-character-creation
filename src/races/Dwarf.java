@@ -3,6 +3,7 @@ package races;
 import enums.AbilityScoreType;
 import enums.Language;
 import enums.Size;
+import enums.Weapon;
 
 import java.util.*;
 
@@ -16,6 +17,7 @@ public class Dwarf extends Race {
         super(Size.MEDIUM, 25, true, Arrays.asList(Language.COMMON, Language.DWARVISH));
         this.additionalTraits = this.setAdditionalTraits();
         this.increaseAbilityScore(AbilityScoreType.CONSTITUTION, 2);
+        this.setWeaponProficiencies(Arrays.asList(Weapon.BATTLEAXE, Weapon.HANDAXE, Weapon.LIGHT_HAMMER, Weapon.WARHAMMER));
     }
 
     private Map<String, String> setAdditionalTraits() {

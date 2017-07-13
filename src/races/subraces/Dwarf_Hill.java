@@ -6,9 +6,10 @@ import races.Dwarf;
 /**
  * Created by Jonathan on 7/12/17.
  */
-public class HillDwarf extends Dwarf {
+public class Dwarf_Hill extends Dwarf {
 
-    public HillDwarf() {
+    public Dwarf_Hill() {
+        super();
         this.increaseAbilityScore(AbilityScoreType.WISDOM, 1);
     }
 }

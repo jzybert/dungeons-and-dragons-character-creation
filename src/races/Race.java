@@ -1,8 +1,6 @@
 package races;
 
-import enums.AbilityScoreType;
-import enums.Language;
-import enums.Size;
+import enums.*;
 
 import java.util.List;
 import java.util.HashMap;
@@ -13,13 +11,14 @@ import java.util.Map;
  */
 public class Race {
     private Map<AbilityScoreType, Integer> abilityScoreIncrease;
-    private List skillProficiencies;
-    private List weaponProficiencies;
     private final Size size;
     private int speed;
     private boolean hasDarkvision;
     private List<Language> languages;
 
+    private List<Skill> skillProficiencies;
+    private List<Weapon> weaponProficiencies;
+    private List<ArmorType> armorProficiencies;
 
     public Race(Size size, int speed, boolean hasDarkvision, List<Language> languages) {
         this.abilityScoreIncrease = this.mapInitialAbilityScoreIncrease();
@@ -27,6 +26,18 @@ public class Race {
         this.speed = speed;
         this.hasDarkvision = hasDarkvision;
         this.languages = languages;
+    }
+
+    public void setWeaponProficiencies(List<Weapon> weaponProficiencies) {
+        this.weaponProficiencies = weaponProficiencies;
+    }
+
+    public void setArmorProficiencies(List<ArmorType> armorProficiencies) {
+        this.armorProficiencies = armorProficiencies;
+    }
+
+    public void setSkillProficiencies(List<Skill> skillProficiencies) {
+        this.skillProficiencies = skillProficiencies;
     }
 
     public void increaseAbilityScore(AbilityScoreType abilityScoreType, int amount) {
@@ -48,6 +59,10 @@ public class Race {
         return size;
     }
 
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
     public int getSpeed() {
         return speed;
     }
@@ -58,5 +73,17 @@ public class Race {
 
     public List getLanguages() {
         return languages;
+    }
+
+    public List<Skill> getSkillProficiencies() {
+        return skillProficiencies;
+    }
+
+    public List<Weapon> getWeaponProficiencies() {
+        return weaponProficiencies;
+    }
+
+    public List<ArmorType> getArmorProficiencies() {
+        return armorProficiencies;
     }
 }
