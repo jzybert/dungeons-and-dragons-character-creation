@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by Jonathan on 7/12/17.
  */
-public class Race {
+public abstract class Race {
     private Map<AbilityScoreType, Integer> abilityScoreIncrease;
     private final Size size;
     private int speed;
